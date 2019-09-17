@@ -1,0 +1,18 @@
+alias physicalSP S0;
+physicalSP = ([PTBR + 2 * (SP / 512)] * 512) + (SP % 512);
+alias sysCALLNo S1;
+sysCALLNo = physicalSP-1;
+alias Returnval S2;
+Returnval=[physicalSP-2];
+alias arg S3;
+fname=[physicalSP-3];
+
+if(sysCALLNo==1) then
+
+endif;
+
+if(sysCALLNo==4) then
+
+endif;
+
+ireturn; 
